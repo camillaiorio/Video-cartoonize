@@ -20,7 +20,7 @@ for filename in list_of_files:
         size= (width, height)
         img_array.append(img)
 
-out = cv2.VideoWriter('project.avi', cv2.VideoWriter_fourcc(* 'DIVX'), 15,size)
+out = cv2.VideoWriter('project.avi', cv2.VideoWriter_fourcc(* 'DIVX'), 30,size)
 
 for i in range(len(img_array)):
     out.write(img_array[i])
